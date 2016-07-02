@@ -23,5 +23,5 @@ if test -n "$ngx_module_link"; then
 else
     HTTP_MODULES="$HTTP_MODULES ngx_http_cache_purge_module"
     NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/ngx_cache_purge_module.c"
+    have=NGX_CACHE_PURGE_MODULE . auto/have
 fi
-have=NGX_CACHE_PURGE_MODULE . auto/have
